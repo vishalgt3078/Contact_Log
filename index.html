@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-List</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main id="app-layout">
+        <section id="left-col">
+            <header>
+                <img src="/contact.png" alt="My Logo">
+<div class="title"> ContactLog</div>
+<div class="right">
+    <button class="add-btn">Add</button>
+</div>
+                
+            </header>
+            <ul id="contact-list">
+                <!-- <li class="contact-list-item">
+                    <div class="media">
+                        <div class="two-letter">AB</div>
+                    </div>
+                    <div class="contact">
+                        <div class="title">
+                          Title  
+                        </div>
+                        <div class="subtitle"> Subtitle</div>
+                    </div>
+                    <div class="action">
+                        <button class="edit-user">edit</button>
+                        <button class="delete-user">delete</button>
+                    </div>
+                </li> -->
+            </ul>
+        </section>
+        <section id="right-col">
+            <header>
+                <div>
+                    <button id="back-btn">Back</button>
+                </div>
+                <div class="title">Details</div>
+            </header>
+            <div id="right-col-detail"></div>
+        </section>
+    </main>
+    <div id="modal-overlay">
+        <div id="modal">
+            <div class="modal-header">
+                <h2>Add Contacts</h2>
+            </div>
+            <ul id="error-label"></ul>
+            <div class="modal-content">
+                <div class="row">
+                    <div class="input-group">
+                        <label>First Name</label>
+                        <input type="text" id="firstName"/>
+                    </div>
+                    <div class="input-group">
+                        <label>Last Name</label>
+                        <input type="text" id="lastName"/>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label>Age</label>
+                        <input type="number" id="Age"/>
+                    </div>
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="number" id="Phone"/>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label >Email</label>
+                        <input type="email" id="mail">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="close-btn">Close</button>
+                <button class="save-btn">Save</button>
+            </div>
+        </div>
+    </div>
+    <script src="/firebase-sdk.js" type="module"></script>
+    <script src="/app.js" type="module"></script>
+</body>
+</html>
